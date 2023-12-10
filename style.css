@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: white;
+    background-image: url('albaaaa.png');
+    background-size: 25%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, #046, #012);
+}
+
+header {
+    width: 100%;
+}
+
+header h1 {
+    padding: 1em;
+    background: linear-gradient(to bottom, #012, #046);
+    font-size: 2em;
+}
+
+.section {
+    display: none;
+    flex: 1;
+    padding: 5em;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #016, #606);
+    position: relative;
+}
+
+#aboutme-section:target,
+#konicky-section:target,
+#vzdelavani-section:target {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    max-height: 300px;
+}
+
+
+
+a {
+    cursor: pointer;
+    padding: 1em;
+    background: linear-gradient(to bottom, #012, #046);
+    margin: 0.5em;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover,
+a:active {
+    background: linear-gradient(to bottom, #046, rgb(3, 49, 72));
+}
